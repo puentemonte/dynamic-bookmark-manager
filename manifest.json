@@ -1,19 +1,19 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 2,
     "name": "Auto-bookmark",
     "version": "0.1",
-    "description": "Automate bookmark updates",
-    "homepage_url": "https://github.com/puentemonte/auto-bookmark",
-  
-    "permissions": [
-      "bookmarks"
-    ],
+
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
   
     "browser_action": {
-      "default_title": "Auto-bookmark"
-    },
-  
-    "background": {
-      "scripts": ["auto-bookmark.js"]
+      "default_icon": {
+        "48": "icons/auto-bookmark-v2.png"
+      },
+      "default_title": "Auto-bookmark",
+      "default_popup": "/popup.html"
     }
-  }
+
+}
