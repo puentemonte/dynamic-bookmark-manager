@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Auto-bookmark",
+    "name": "Dynamic Bookmarks",
     "version": "0.1",
 
   "permissions": [
@@ -10,9 +10,9 @@
   
     "browser_action": {
       "default_icon": {
-        "48": "icons/auto-bookmark-v2.png"
+        "48": "icons/auto-bookmark.png"
       },
-      "default_title": "Auto-bookmark",
+      "default_title": "Dynamic Bookmarks",
       "default_popup": "/popup.html"
     }
 

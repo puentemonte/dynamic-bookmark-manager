@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <title>Dynamic Bookmark Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <label id="myLabel"></label>
-        <br>
-        <button id="changeButton">Greetings!</button>
+        <div class="input-group">
+            <label for="urlPattern">URL Pattern (use {variable} for dynamic part):</label>
+            <input type="text" id="urlPattern" 
+                   placeholder="e.g., http://exampleURL.com/day{variable}">
+        </div>
+        <div class="input-group">
+            <label>Rule:</label>
+            <div class="rule-group">
+                <select id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                </select>
+                <input type="number" id="periodicity" min="1" value="1" 
+                       placeholder="Period">
+                <select id="operation">
+                    <option value="daily">daily</option>
+                    <option value="weekly">weekly</option>
+                    <option value="monthly">monthly</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="bookmarkName">Bookmark Name:</label>
+            <input type="text" id="bookmarkName" placeholder="Enter bookmark name">
+        </div>
+        <button id="saveButton">Create/Update Dynamic Bookmark</button>
+        <div id="status"></div>
     </div>
-    <script src="auto-bookmark.js"></script>
+    <!--
+    <script src="popup.js"></script>
+    -->
 </body>
 </html>

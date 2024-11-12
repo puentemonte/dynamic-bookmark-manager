@@ -1,4 +1,4 @@
-# Auto-bookmark
+# Dynamic Bookmarks!
 
 ## Why?
 Every week at work I have to change the Confluence bookmark of the project's weekly table. I don't want to do that, I want to automate it.
