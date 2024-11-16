@@ -1,19 +1,25 @@
 {
     "manifest_version": 2,
-    "name": "Dynamic Bookmarks",
+    "name": "Dynamic Bookmark Manager",
     "version": "0.1",
+    "icons": {
+      "48": "icons/auto-bookmark.png"
+    },
 
   "permissions": [
+    "storage",
     "bookmarks",
-    "tabs"
+    "alarms"
   ],
   
     "browser_action": {
       "default_icon": {
         "48": "icons/auto-bookmark.png"
       },
-      "default_title": "Dynamic Bookmarks",
+      "default_title": "Dynamic Bookmark Manager",
       "default_popup": "/popup.html"
+    },
+    "background": {
+      "scripts": ["auto-bookmark.js"]
     }
-
 }

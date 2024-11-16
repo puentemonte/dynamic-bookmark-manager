@@ -22,10 +22,10 @@
                 </select>
                 <input type="number" id="periodicity" min="1" value="1" 
                        placeholder="Period">
-                <select id="operation">
-                    <option value="daily">daily</option>
-                    <option value="weekly">weekly</option>
-                    <option value="monthly">monthly</option>
+                <select id="timeUnit">
+                    <option value="days">days</option>
+                    <option value="weeks">weeks</option>
+                    <option value="months">months</option>
                 </select>
             </div>
         </div>
@@ -33,11 +33,12 @@
             <label for="bookmarkName">Bookmark Name:</label>
             <input type="text" id="bookmarkName" placeholder="Enter bookmark name">
         </div>
+        <div class="preview" id="preview">
+            Next 3 values will be: <span id="previewValues"></span>
+        </div>
         <button id="saveButton">Create/Update Dynamic Bookmark</button>
         <div id="status"></div>
     </div>
-    <!--
     <script src="popup.js"></script>
-    -->
 </body>
 </html>
